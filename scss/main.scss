@@ -1,0 +1,43 @@
+$primary:#0D6EFD;
+$primary-300:#0D6EFD;
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1:$spacer * .25,
+  2:$spacer * .5,
+  3:$spacer * 1,
+  4:$spacer * 1.5,
+  5:$spacer * 2,
+  6:$spacer * 3,
+  7:$spacer * 4,
+  8:$spacer * 6,
+  9:$spacer * 8,
+  10:$spacer * 12,
+  11:$spacer * 16,
+  12:$spacer * 24,
+);
+.heading-line{
+  &::before{
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+  }
+  &::after{
+    content: "";
+    width:2rem;
+    padding-top: 0.5rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: $primary;
+  }
+}
+$gradient: linear-gradient(to right,rgba($primary,0.95),rgba($primary-300,0.65)) ;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
